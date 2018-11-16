@@ -49,6 +49,7 @@ public class MusicService extends Service {
             @Override
             public void onCompletion(MediaPlayer mediaPlayer) {
                 currentMusicIndex++;
+
                 currentMusicIndex%=musics.length;
                 prepareAndPlayMusic(musics[currentMusicIndex]);
                 Intent intent = new Intent();
@@ -80,7 +81,7 @@ public class MusicService extends Service {
     }
 
     public static final String ACTION_SERVICE_RECEIVER = "ACTION_MUSIC_RECEIVER_RECEIVER_CAM";
-    public static final String CODE = "RECEIVER_CODE";
+    public static final String CODE = "RECEIVER_CODE_CAM";
     public class MusicReceiver extends BroadcastReceiver
     {
         @Override
