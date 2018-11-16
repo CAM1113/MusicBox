@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public static final String MUSIC_CHANGE_ACTION = "MUSIC_CHANGE_ACTION_CAM";
-    public static final String MUSIC_NAME = "music_name_cam";
+    public static final String MUSIC_NAME = "music_name_cam_";
 
     @Override
     public void onClick(View view) {
